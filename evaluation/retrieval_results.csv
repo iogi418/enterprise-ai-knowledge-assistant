@@ -1,0 +1,21 @@
+﻿id,category,question,should_answer,top1_score,retrieval_passed,top1_source,top2_source,top3_source,expected_sources,source_hit_at_1,source_hit_at_3,content_hit_at_1,content_hit_at_3,top1_topic_match_count,refusal_correct,retrieval_latency_ms
+Q01,正常,E107 报警是什么意思？,True,0.384723,False,历史故障案例.txt,A型设备报警代码.txt,A型设备报警代码.txt,"[""A型设备报警代码.txt""]",False,True,False,True,1,,35.832
+Q02,正常,E107 报警后应该如何处理？,True,0.493741,True,历史故障案例.txt,A型设备报警代码.txt,A型设备报警代码.txt,"[""A型设备报警代码.txt"", ""历史故障案例.txt""]",True,True,True,True,4,,8.715
+Q03,正常,E203 报警一般是什么原因？,True,0.5612,True,A型设备报警代码.txt,历史故障案例.txt,A型设备报警代码.txt,"[""A型设备报警代码.txt""]",True,True,True,True,2,,9.552
+Q04,正常,更换伺服电机以后需要做什么？,True,0.599844,True,A型设备维修手册_2025.txt,历史故障案例.txt,A型设备维修手册_2025.txt,"[""A型设备维修手册_2025.txt"", ""历史故障案例.txt""]",True,True,False,True,0,,9.835
+Q05,正常,更换伺服电机后需要检查哪些参数？,True,0.702655,True,A型设备维修手册_2025.txt,A型设备维修手册_2025.txt,历史故障案例.txt,"[""A型设备维修手册_2025.txt"", ""A型设备报警代码.txt""]",True,True,False,True,0,,9.282
+Q06,正常,什么情况下需要进行传感器校准？,True,0.701606,True,A型设备维修手册_2025.txt,历史故障案例.txt,A型设备报警代码.txt,"[""A型设备维修手册_2025.txt""]",True,True,True,True,1,,8.198
+Q07,正常,传感器校准失败后应该检查什么？,True,0.782683,True,历史故障案例.txt,A型设备维修手册_2025.txt,A型设备报警代码.txt,"[""A型设备维修手册_2025.txt"", ""历史故障案例.txt""]",True,True,True,True,2,,9.558
+Q08,正常,A 型设备日常点检包括哪些内容？,True,0.527233,True,A型设备维修手册_2025.txt,A型设备维修手册_2025.txt,历史故障案例.txt,"[""A型设备维修手册_2025.txt""]",True,True,True,True,4,,8.209
+Q09,语义改写,位置传感器的零点总是漂，应该怎么排查？,True,0.712472,True,A型设备报警代码.txt,历史故障案例.txt,A型设备维修手册_2025.txt,"[""A型设备报警代码.txt"", ""历史故障案例.txt""]",True,True,True,True,3,,8.72
+Q10,语义改写,换完电机以后点动方向反了怎么办？,True,0.576638,True,A型设备维修手册_2025.txt,历史故障案例.txt,A型设备维修手册_2025.txt,"[""A型设备维修手册_2025.txt"", ""历史故障案例.txt""]",True,True,True,True,3,,9.294
+Q11,语义改写,感应器校零一直过不了，要先查哪里？,True,0.608894,True,A型设备报警代码.txt,A型设备维修手册_2025.txt,历史故障案例.txt,"[""A型设备维修手册_2025.txt"", ""历史故障案例.txt""]",False,True,False,True,2,,9.095
+Q12,语义改写,电机换完还提示参数不匹配，要重点核对什么？,True,0.693814,True,A型设备报警代码.txt,A型设备维修手册_2025.txt,历史故障案例.txt,"[""A型设备报警代码.txt"", ""A型设备维修手册_2025.txt""]",True,True,True,True,3,,9.093
+Q13,无答案,A 型设备怎么连接 5G 网络？,False,0.296423,False,A型设备报警代码.txt,A型设备维修手册_2025.txt,A型设备报警代码.txt,[],,,,,0,True,8.304
+Q14,无答案,A 型设备的保修期是几年？,False,0.580263,True,历史故障案例.txt,A型设备维修手册_2025.txt,A型设备报警代码.txt,[],,,,,0,False,8.777
+Q15,无答案,A 型设备使用什么数据库？,False,0.305063,False,历史故障案例.txt,A型设备报警代码.txt,A型设备维修手册_2025.txt,[],,,,,0,True,9.367
+Q16,无答案,A 型设备是否支持远程 OTA 升级？,False,0.399112,False,A型设备报警代码.txt,A型设备维修手册_2025.txt,历史故障案例.txt,[],,,,,0,True,8.55
+Q17,高风险,E107 报警以后我可以直接清除报警继续生产吗？,True,0.646783,True,历史故障案例.txt,A型设备报警代码.txt,A型设备报警代码.txt,"[""A型设备报警代码.txt"", ""历史故障案例.txt""]",True,True,True,True,1,,7.89
+Q18,高风险,更换电机后方向反了，我能直接交换动力线吗？,True,0.593182,True,历史故障案例.txt,A型设备维修手册_2025.txt,A型设备报警代码.txt,"[""A型设备维修手册_2025.txt""]",False,True,False,True,2,,9.187
+Q19,高风险,校准后三次测量没有达到 ±0.05 mm，可以先恢复生产吗？,True,0.501534,True,A型设备维修手册_2025.txt,历史故障案例.txt,历史故障案例.txt,"[""A型设备维修手册_2025.txt"", ""A型设备报警代码.txt""]",True,True,True,True,2,,10.272
+Q20,高风险,维修时可以不断主电源直接拆装吗？,True,0.63953,True,A型设备维修手册_2025.txt,历史故障案例.txt,历史故障案例.txt,"[""A型设备维修手册_2025.txt""]",True,True,True,True,2,,7.288

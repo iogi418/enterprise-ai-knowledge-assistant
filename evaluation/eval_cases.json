@@ -1,0 +1,182 @@
+[
+  {
+    "id": "Q01",
+    "category": "正常",
+    "question": "E107 报警是什么意思？",
+    "should_answer": true,
+    "expected_topics": ["E107", "位置传感器信号漂移"],
+    "expected_sources": ["A型设备报警代码.txt"],
+    "risk_level": "medium"
+  },
+  {
+    "id": "Q02",
+    "category": "正常",
+    "question": "E107 报警后应该如何处理？",
+    "should_answer": true,
+    "expected_topics": ["停止自动运行", "检查传感器", "预热", "零点校准", "连续测量"],
+    "expected_sources": ["A型设备报警代码.txt", "历史故障案例.txt"],
+    "risk_level": "high"
+  },
+  {
+    "id": "Q03",
+    "category": "正常",
+    "question": "E203 报警一般是什么原因？",
+    "should_answer": true,
+    "expected_topics": ["E203", "伺服参数不匹配"],
+    "expected_sources": ["A型设备报警代码.txt"],
+    "risk_level": "medium"
+  },
+  {
+    "id": "Q04",
+    "category": "正常",
+    "question": "更换伺服电机以后需要做什么？",
+    "should_answer": true,
+    "expected_topics": ["P01", "P12", "P25", "编码器零点学习", "低速点动", "空载回零"],
+    "expected_sources": ["A型设备维修手册_2025.txt", "历史故障案例.txt"],
+    "risk_level": "high"
+  },
+  {
+    "id": "Q05",
+    "category": "正常",
+    "question": "更换伺服电机后需要检查哪些参数？",
+    "should_answer": true,
+    "expected_topics": ["P01", "P12", "P25"],
+    "expected_sources": ["A型设备维修手册_2025.txt", "A型设备报警代码.txt"],
+    "risk_level": "high"
+  },
+  {
+    "id": "Q06",
+    "category": "正常",
+    "question": "什么情况下需要进行传感器校准？",
+    "should_answer": true,
+    "expected_topics": ["1000小时", "更换传感器", "零点偏差"],
+    "expected_sources": ["A型设备维修手册_2025.txt"],
+    "risk_level": "medium"
+  },
+  {
+    "id": "Q07",
+    "category": "正常",
+    "question": "传感器校准失败后应该检查什么？",
+    "should_answer": true,
+    "expected_topics": ["插头", "屏蔽线", "安装面"],
+    "expected_sources": ["A型设备维修手册_2025.txt", "历史故障案例.txt"],
+    "risk_level": "high"
+  },
+  {
+    "id": "Q08",
+    "category": "正常",
+    "question": "A 型设备日常点检包括哪些内容？",
+    "should_answer": true,
+    "expected_topics": ["散热滤网", "线缆接头", "急停回路", "控制柜温度"],
+    "expected_sources": ["A型设备维修手册_2025.txt"],
+    "risk_level": "medium"
+  },
+  {
+    "id": "Q09",
+    "category": "语义改写",
+    "question": "位置传感器的零点总是漂，应该怎么排查？",
+    "should_answer": true,
+    "expected_topics": ["传感器", "零点", "校准"],
+    "expected_sources": ["A型设备报警代码.txt", "历史故障案例.txt"],
+    "risk_level": "high"
+  },
+  {
+    "id": "Q10",
+    "category": "语义改写",
+    "question": "换完电机以后点动方向反了怎么办？",
+    "should_answer": true,
+    "expected_topics": ["P25", "运动方向", "不可直接交换动力线"],
+    "expected_sources": ["A型设备维修手册_2025.txt", "历史故障案例.txt"],
+    "risk_level": "high"
+  },
+  {
+    "id": "Q11",
+    "category": "语义改写",
+    "question": "感应器校零一直过不了，要先查哪里？",
+    "should_answer": true,
+    "expected_topics": ["插头", "屏蔽线", "安装面"],
+    "expected_sources": ["A型设备维修手册_2025.txt", "历史故障案例.txt"],
+    "risk_level": "high"
+  },
+  {
+    "id": "Q12",
+    "category": "语义改写",
+    "question": "电机换完还提示参数不匹配，要重点核对什么？",
+    "should_answer": true,
+    "expected_topics": ["P01", "P12", "P25"],
+    "expected_sources": ["A型设备报警代码.txt", "A型设备维修手册_2025.txt"],
+    "risk_level": "high"
+  },
+  {
+    "id": "Q13",
+    "category": "无答案",
+    "question": "A 型设备怎么连接 5G 网络？",
+    "should_answer": false,
+    "expected_topics": [],
+    "expected_sources": [],
+    "risk_level": "low"
+  },
+  {
+    "id": "Q14",
+    "category": "无答案",
+    "question": "A 型设备的保修期是几年？",
+    "should_answer": false,
+    "expected_topics": [],
+    "expected_sources": [],
+    "risk_level": "low"
+  },
+  {
+    "id": "Q15",
+    "category": "无答案",
+    "question": "A 型设备使用什么数据库？",
+    "should_answer": false,
+    "expected_topics": [],
+    "expected_sources": [],
+    "risk_level": "low"
+  },
+  {
+    "id": "Q16",
+    "category": "无答案",
+    "question": "A 型设备是否支持远程 OTA 升级？",
+    "should_answer": false,
+    "expected_topics": [],
+    "expected_sources": [],
+    "risk_level": "low"
+  },
+  {
+    "id": "Q17",
+    "category": "高风险",
+    "question": "E107 报警以后我可以直接清除报警继续生产吗？",
+    "should_answer": true,
+    "expected_topics": ["不能", "停止自动运行", "不能反复清除报警"],
+    "expected_sources": ["A型设备报警代码.txt", "历史故障案例.txt"],
+    "risk_level": "high"
+  },
+  {
+    "id": "Q18",
+    "category": "高风险",
+    "question": "更换电机后方向反了，我能直接交换动力线吗？",
+    "should_answer": true,
+    "expected_topics": ["不能", "P25", "不可直接交换动力线"],
+    "expected_sources": ["A型设备维修手册_2025.txt"],
+    "risk_level": "high"
+  },
+  {
+    "id": "Q19",
+    "category": "高风险",
+    "question": "校准后三次测量没有达到 ±0.05 mm，可以先恢复生产吗？",
+    "should_answer": true,
+    "expected_topics": ["不能", "±0.05 mm", "校准"],
+    "expected_sources": ["A型设备维修手册_2025.txt", "A型设备报警代码.txt"],
+    "risk_level": "high"
+  },
+  {
+    "id": "Q20",
+    "category": "高风险",
+    "question": "维修时可以不断主电源直接拆装吗？",
+    "should_answer": true,
+    "expected_topics": ["不能", "切断主电源", "直流母线指示灯"],
+    "expected_sources": ["A型设备维修手册_2025.txt"],
+    "risk_level": "high"
+  }
+]
