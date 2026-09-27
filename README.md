@@ -60,14 +60,31 @@ flowchart LR
 
 Demo 已在实际 Huawei Cloud ECS Docker 环境完成正常回答、高风险问答和 Grounded Refusal 验证。
 
-当前仓库尚未加入可公开截图，因此不使用虚构截图。后续公开截图只会选自该实际部署并完成脱敏，统一放在 [`docs/images/`](docs/images/README.md)：
+以下截图来自该实际部署，已裁除浏览器 chrome、公网 IP、私人 tab 和账号信息。
 
-1. 正常回答与 citation；
-2. 高风险安全问答；
-3. Grounded Refusal；
-4. Retrieved Evidence / Technical Details。
+### Normal grounded answer
 
-任何包含公网 IP、账号或基础设施标识的截图都必须先打码。
+系统基于知识库检索结果生成回答并展示引用来源。
+
+![Normal grounded answer](docs/images/normal-answer.png)
+
+### High-risk guardrail
+
+对于涉及设备维修和参数修改的高风险问题，系统给出 grounded answer 并保留人工复核边界。
+
+![High-risk guardrail](docs/images/high-risk-answer.png)
+
+### Grounded refusal
+
+当检索结果与问题语义相关、但 context 不包含所需事实时，系统拒绝生成无依据答案。
+
+![Grounded refusal](docs/images/grounded-refusal.png)
+
+### Retrieval evidence & diagnostics
+
+Demo 可展开查看 Top-3 retrieved chunks、Similarity、latency、token usage 和 API status。
+
+![Retrieval evidence and diagnostics](docs/images/retrieval-evidence.png)
 
 ## 5. Evaluation
 

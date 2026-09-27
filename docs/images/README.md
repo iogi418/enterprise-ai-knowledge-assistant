@@ -1,12 +1,10 @@
 # Demo screenshots
 
-本目录用于存放公开 Portfolio 使用的 Demo 截图。当前仓库尚未加入截图文件，不使用虚构图片或占位图冒充实际界面。
+本目录包含从实际 Huawei Cloud ECS Docker deployment 截取并脱敏的 Portfolio 图片：
 
-计划从已经验证的 Huawei Cloud ECS Docker deployment 中选取并脱敏以下截图：
+1. `normal-answer.png`：正常 grounded answer 与引用；
+2. `high-risk-answer.png`：高风险问题与人工复核边界；
+3. `grounded-refusal.png`：知识依据不足时拒答；
+4. `retrieval-evidence.png`：Top-3 evidence 与 technical diagnostics。
 
-1. 正常回答与引用；
-2. 高风险问题及安全提示；
-3. Grounded Refusal；
-4. Retrieved Evidence / Technical Details。
-
-加入公开仓库前必须移除或遮盖公网 IP、API Key、浏览器历史、账号信息及其他基础设施标识。
+公开图片只保留 Streamlit 页面主体；浏览器 chrome、公网 IP、私人 tab 和账号信息已经移除。未经处理的原始素材保存在本地 `raw/`，并由项目 `.gitignore` 排除。
